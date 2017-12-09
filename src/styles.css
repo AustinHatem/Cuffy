@@ -1,12 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
-html { 
+/*html { 
   background: url(assets/img/bgBlur.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
-
+*/
 
 /*
 FLEXSTRAP
@@ -23,5 +23,51 @@ FLEXSTRAP
 .item {
 	box-sizing: border-box;
 	
+}
+
+/*grid
+*/
+
+body{
+	color: #fff;
+	margin: 0px;
+	font-family: 'Raleway', sans-serif;
+}
+
+.container{
+	display: grid;
+	grid-template-columns: repeat(12,1fr);
+	grid-auto-rows: minmax(100px,auto);
+	width: 100%;
+	margin: 0 auto;
+}
+
+
+
+header{
+	background: url(assets/img/bgBlur.jpg) no-repeat center center fixed;
+	  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	grid-column: 1/13;
+	grid-row: 1/3;
+	height: 500px;
 
 }
+
+
+main{
+	grid-column: 1/13;
+}
+
+.about{
+	grid-column: 1/13;
+}
+footer{
+	grid-column: 1/13;
+}
+
+
+
+

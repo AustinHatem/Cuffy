@@ -13,21 +13,26 @@ import { LandingComponent } from './landing/landing.component';
 //router
 import { routing } from './routing.module';
 
-//Materials START 
+//Materials  
 import { 
   MatAutocompleteModule, MatButtonModule, MatButtonToggleModule, MatCardModule, MatCheckboxModule, MatChipsModule, MatDatepickerModule, MatDialogModule, MatExpansionModule, MatGridListModule, MatIconModule, 
   MatInputModule, MatListModule, MatMenuModule, MatNativeDateModule, MatPaginatorModule, MatProgressBarModule, MatProgressSpinnerModule, MatRadioModule, MatRippleModule, MatSelectModule, 
   MatSidenavModule, MatSliderModule, MatSlideToggleModule, MatSnackBarModule, MatSortModule, MatTableModule, MatTabsModule, MatToolbarModule, MatTooltipModule, MatStepperModule, 
 } from '@angular/material'; 
-import {CdkTableModule} from '@angular/cdk/table'; 
-//Materials END 
+import {CdkTableModule} from '@angular/cdk/table';
+
+import { HomeComponent } from './home/home.component';
+import { HeaderComponent } from './home/header/header.component'; 
+
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LandingComponent
+    LandingComponent,
+    HomeComponent,
+    HeaderComponent
   ],
   imports: [
     routing,
