@@ -4,8 +4,16 @@ const MongoClient = require('mongodb').MongoClient;
 const ObjectID = require('mongodb').ObjectID;
 
 // Connect
+// const connection = (closure) => {
+//     return MongoClient.connect('mongodb://localhost:27017/mean', (err, db) => {
+//         if (err) return console.log(err);
+
+//         closure(db);
+//     });
+// };
+// 
 const connection = (closure) => {
-    return MongoClient.connect('mongodb://localhost:27017/mean', (err, db) => {
+    return MongoClient.connect('mongodb://<dbuser>:<dbpassword>@ds133796.mlab.com:33796/mean', (err, db) => {
         if (err) return console.log(err);
 
         closure(db);
